@@ -5,88 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BankStatement</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-
-        table{
-            display: inline;
-            position: relative;
-            top: 90px;
-            left: 130px;
-            border: none;
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        th, td{
-            border: 2px solid green;
-            padding: 10px 20px;
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        th{
-            background-color: lightgreen;
-            color: white;
-        }
-
-        td{
-            background-color: #f2f2f2;
-        }
-
-        td:hover {
-            background-color: white;
-            padding: 14px 24px;
-            cursor: pointer;
-        }
-
-        h1{
-            display: inline;
-            position: relative;
-            left: 629px;
-            top: 26px;
-        }
-        
-        .btn {
-            display: inline-block;
-            position: relative;
-            top: 200px;
-            right: 414px;
-            padding: 8px 20px;
-            margin: 7px 3px;
-            border: 2px solid green;
-            color: green;
-            border-radius: 8px;
-            cursor: pointer;
-            background: none;
-            font-weight: bold;
-        }
-
-        .btn:hover {
-            padding: 8px 20px;
-            margin: 7px 3px;
-            border: 2px solid green;
-            color: white;
-            border-radius: 8px;
-            cursor: pointer;
-            background: green;
-        }
-
-        .date{
-            display: inline-block;
-            position: relative;
-            top: 251px;
-            left: 10px;
-        }
-
-        .time{
-            display: inline-block;
-            position: relative;
-            top: 276px;
-            left: -192px;
-        }
-    </style>
+    <link rel="stylesheet" href="/static/css/bank_statement_details.css">
 </head>
 <body>
     <h1>BankStatement</h1>
@@ -96,7 +15,7 @@
             <th>AccountNo</th>
             <th>Email</th>
             <th>AccountType </th>
-            <th>CurrentBalance</th>
+            <th>CurrentBalance(Rs)</th>
         </tr>
         {% for item in bank%}
             <tr>
