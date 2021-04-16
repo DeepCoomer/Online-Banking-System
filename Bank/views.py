@@ -17,36 +17,9 @@ def index(request):
         index.save()
     return render(request,'index.html')
 
-# def view_info(request):
-#     contact = Contact.objects.all()
-#     return render(request,'data.html',{'objs':contact})
-
 def CustomerData(request):
     customer = Customer.objects.all()
     return render(request,'data.html',{'customers':customer})
-
-# def data(request):
-#     if request.user.is_anonymous:
-#         return redirect("/data")
-#     return render(request,'data.html')
-
-# def loginUser(request):
-#     if request.method == "POST":
-#         username = request.POST.get('username')
-#         password = request.POST.get('password')
-#         user = authenticate(username=username,password=password)
-#         if user is not None:
-#             login(request,user)
-#             # A backend authenticated the credentials
-#             return redirect("/")
-#         else:
-#             # No backend authenticated the credentials
-#             return render(request,'admistration.html')
-#     return render(request,'admistration.html')
-
-# def logoutUser(request):
-#     logout(request)
-#     return redirect("/")
 
 def bank_statement(request):
     return render(request,'bank_statement.html')
@@ -73,14 +46,6 @@ def transfer_money(request):
         transfer_money.save()
         sender = Customer.objects.filter(Name=SenderName,AccountNo=SenderAccountNo)
         reciever = Customer.objects.filter(Name=RecieverName,AccountNo=RecieverAccountNo)
-        # sendernew = Customer.objects.all()
-        # recievernew = Customer.objects.all()
-        # for s in sendernew:
-        #     semailnew = s.Email
-        #     saccounttypenew = s.AccountType
-        # for r in recievernew:
-        #     remailnew = r.Email
-        #     raccounttypenew = r.AccountType
         for s in sender:
             sbalance = s.CurrentBalance
             semail = s.Email

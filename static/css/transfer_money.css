@@ -142,21 +142,10 @@ h1 {
     color: white;
 }
 
-.messagefailed{
+.message{
     display: inline-block;
     position: relative;
     background-color: lightblue;
-    opacity: 0.5;
-    width: 1499px;
-    padding: 8px 10px;
-    top: 192px;
-    right: 0px;
-}
-
-.messagesuccess{
-    display: inline-block;
-    position: relative;
-    background-color: lightgreen;
     opacity: 0.5;
     width: 1499px;
     padding: 8px 10px;
