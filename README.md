@@ -1,6 +1,8 @@
 # Online-Banking-System
 The Sparks Foundation thesparksfoundation internship #GRIPAPR21 #TSF #GRIP #webdevelopment #development
 
+Website Developed Using Django
+
 **1.Home Page of the website**
 ![image](https://user-images.githubusercontent.com/75359203/114749240-5ac9ba80-9d70-11eb-919f-14787ed57b2d.png)
 
