@@ -43,7 +43,7 @@
         time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
         document.getElementById('date').innerHTML = date;
         document.getElementById('time').innerHTML = time;
-        if (a.getHours() >=0 && a.getHours() <=12){
+        if (a.getHours() >=0 && a.getHours() <12){
             document.getElementById('duration').innerHTML = " AM";
         }
         else{
