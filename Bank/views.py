@@ -74,5 +74,5 @@ def transfer_money(request):
     return render(request,'transfer_money.html')
 
 def transfer_history(request):
-    transfer = Transfer_money.objects.all()
+    transfer = Transfer_money.objects.all().order_by('-Date')
     return render(request,'transfer_history.html',{'transfer':transfer})

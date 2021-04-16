@@ -72,7 +72,7 @@ h1{
     left: 10px;
 }
 
-.time{
+p.time{
     display: inline-block;
     position: relative;
     top: 276px;
