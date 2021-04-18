@@ -41,7 +41,7 @@ def transfer_money(request):
         RecieverName = request.POST.get('RecieverName')
         RecieverAccountNo = request.POST.get('RecieverAccountNo')
         Amount = int(request.POST.get('Amount'))
-        Date = datetime.date.day()
+        Date = datetime.datetime.now()
         transfer_money = Transfer_money(SenderName=SenderName,SenderAccountNo=SenderAccountNo,RecieverName=RecieverName,RecieverAccountNo=RecieverAccountNo,Amount=Amount,Date=Date)
         transfer_money.save()
         sender = Customer.objects.filter(Name=SenderName,AccountNo=SenderAccountNo)
