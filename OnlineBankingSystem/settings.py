@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY ="oy6)s%lldal4@w@+2x2bgiwrko_5+o!h&y0tuwf=p%z6l"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["onlinebankingsystem-sf.herokuapp.com","localhost","*"]
 
