@@ -21,12 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'oy6)s%lldal4@w@+2x2bgiwrko_5+o!h&y0tuwf=p%z6l$era@'
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["onlinebankingsystem-sf.herokuapp.com","localhost"]
+ALLOWED_HOSTS = ["onlinebankingsystem-sf.herokuapp.com","localhost","*"]
 
 
 # Application definition
@@ -122,8 +122,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# STATICFILES_DIRS = [
-#     BASE_DIR / "static",
-# ]
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 
-STATIC_ROOT = BASE_DIR/ 'static'
+# STATIC_ROOT = BASE_DIR/ 'static'
