@@ -18,7 +18,6 @@
             <th>RecieverName</th>
             <th>RecieverAccountNo</th>
             <th>Amount(Rs)</th>
-            <th>DateTime</th>
         </tr>
         {% for item in transfer%}
         <tr>
@@ -27,7 +26,6 @@
             <td>{{item.RecieverName}}</td>
             <td>{{item.RecieverAccountNo}}</td>
             <td>{{item.Amount}}</td>
-            <td>{{item.Date}}</td>
         </tr>
         {% endfor %}
     </table>
